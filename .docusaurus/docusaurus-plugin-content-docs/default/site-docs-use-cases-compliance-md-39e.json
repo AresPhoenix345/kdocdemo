@@ -1,0 +1,24 @@
+{
+  "id": "use-cases/compliance",
+  "title": "Regional Compliance (Data Residency)",
+  "description": "Problem Statement",
+  "source": "@site/docs/use-cases/compliance.md",
+  "sourceDirName": "use-cases",
+  "slug": "/use-cases/compliance",
+  "permalink": "/docs/use-cases/compliance",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/use-cases/compliance.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Multi-Cloud Orchestration",
+    "permalink": "/docs/use-cases/multi-cloud"
+  },
+  "next": {
+    "title": "CRD Synchronization (Custom Resources Across Clusters)",
+    "permalink": "/docs/use-cases/crd-sync"
+  }
+}

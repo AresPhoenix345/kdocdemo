@@ -1,0 +1,24 @@
+{
+  "id": "use-cases/index",
+  "title": "Use Cases",
+  "description": "KubeStellar shines when you need to manage many Kubernetes clusters (edge, multi-cloud, hybrid) while keeping a single-cluster-like developer workflow.",
+  "source": "@site/docs/use-cases/index.md",
+  "sourceDirName": "use-cases",
+  "slug": "/use-cases/",
+  "permalink": "/docs/use-cases/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/use-cases/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Error Reference",
+    "permalink": "/docs/troubleshooting/error-reference"
+  },
+  "next": {
+    "title": "Edge Deployment",
+    "permalink": "/docs/use-cases/edge-deployment"
+  }
+}

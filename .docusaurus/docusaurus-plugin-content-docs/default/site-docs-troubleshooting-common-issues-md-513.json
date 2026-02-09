@@ -1,0 +1,24 @@
+{
+  "id": "troubleshooting/common-issues",
+  "title": "Common Issues (20)",
+  "description": "This page contains 20 common issues encountered when installing and operating KubeStellar. Each entry includes symptoms, logs, root cause, resolution, prevention, and related commands.",
+  "source": "@site/docs/troubleshooting/common-issues.md",
+  "sourceDirName": "troubleshooting",
+  "slug": "/troubleshooting/common-issues",
+  "permalink": "/docs/troubleshooting/common-issues",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/troubleshooting/common-issues.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Troubleshooting Guide",
+    "permalink": "/docs/troubleshooting/"
+  },
+  "next": {
+    "title": "Error Reference",
+    "permalink": "/docs/troubleshooting/error-reference"
+  }
+}

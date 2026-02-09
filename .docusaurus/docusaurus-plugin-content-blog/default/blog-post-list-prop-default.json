@@ -1,0 +1,17 @@
+{
+  "title": "Recent posts",
+  "items": [
+    {
+      "title": "Mentorship Opportunity: Build the Future of KubeStellar Onboarding",
+      "permalink": "/blog/mentorship-opportunity",
+      "unlisted": false,
+      "date": "2026-02-11T00:00:00.000Z"
+    },
+    {
+      "title": "Project Vision: From Zero to Multi-Cluster in 30 Minutes",
+      "permalink": "/blog/project-vision",
+      "unlisted": false,
+      "date": "2026-02-10T00:00:00.000Z"
+    }
+  ]
+}

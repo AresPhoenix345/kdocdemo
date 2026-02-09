@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/about",
+  "source": "@site/src/pages/about.md",
+  "title": "About this Prototype",
+  "description": "LFX Mentorship 2026 Term 1 prototype for KubeStellar documentation and self-service enablement",
+  "frontMatter": {
+    "title": "About this Prototype",
+    "description": "LFX Mentorship 2026 Term 1 prototype for KubeStellar documentation and self-service enablement"
+  },
+  "unlisted": false
+}

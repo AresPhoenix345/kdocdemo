@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/index",
+  "title": "Tutorials",
+  "description": "Welcome to the KubeStellar Tutorials section! Here you'll find interactive and video-based learning resources to master multi-cluster Kubernetes management with KubeStellar.",
+  "source": "@site/docs/tutorials/index.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/",
+  "permalink": "/docs/tutorials/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/tutorials/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "First Deployment",
+    "permalink": "/docs/quickstart/first-deployment"
+  },
+  "next": {
+    "title": "Interactive Tutorial Preview",
+    "permalink": "/docs/tutorials/interactive-tutorial-preview"
+  }
+}

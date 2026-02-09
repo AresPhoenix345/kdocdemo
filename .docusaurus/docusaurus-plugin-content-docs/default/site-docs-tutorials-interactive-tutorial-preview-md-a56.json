@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/interactive-tutorial-preview",
+  "title": "Interactive Tutorial Preview",
+  "description": "The KubeStellar Interactive Tutorial is a browser-based learning environment powered by Killercoda. No local installation required - everything runs in your browser!",
+  "source": "@site/docs/tutorials/interactive-tutorial-preview.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/interactive-tutorial-preview",
+  "permalink": "/docs/tutorials/interactive-tutorial-preview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/tutorials/interactive-tutorial-preview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tutorials",
+    "permalink": "/docs/tutorials/"
+  },
+  "next": {
+    "title": "Video Tutorial Series Outline",
+    "permalink": "/docs/tutorials/video-series-outline"
+  }
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>KubeStellar Documentation Initiative Blog</title>
+        <link>https://kubestellar-docs-demo.netlify.app/blog</link>
+        <description>KubeStellar Documentation Initiative Blog</description>
+        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Mentorship Opportunity: Build the Future of KubeStellar Onboarding]]></title>
+            <link>https://kubestellar-docs-demo.netlify.app/blog/mentorship-opportunity</link>
+            <guid>https://kubestellar-docs-demo.netlify.app/blog/mentorship-opportunity</guid>
+            <pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Opportunity Summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="opportunity-summary">Opportunity Summary<a href="https://kubestellar-docs-demo.netlify.app/blog/mentorship-opportunity#opportunity-summary" class="hash-link" aria-label="Direct link to Opportunity Summary" title="Direct link to Opportunity Summary" translate="no">​</a></h2>
+<p>This LFX Mentorship project focuses on <strong>KubeStellar Documentation and Self-Service Enablement</strong>—creating a frictionless path for new users to adopt KubeStellar.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="timeline">Timeline<a href="https://kubestellar-docs-demo.netlify.app/blog/mentorship-opportunity#timeline" class="hash-link" aria-label="Direct link to Timeline" title="Direct link to Timeline" translate="no">​</a></h2>
+<p><strong>LFX Mentorship 2026 Term 1</strong> (March–May) — <strong>12 weeks</strong></p>
+<ul>
+<li class=""><strong>Weeks 1–2</strong>: Audit deployments and document friction points</li>
+<li class=""><strong>Weeks 3–4</strong>: Draft Quickstart + run first user tests</li>
+<li class=""><strong>Weeks 5–6</strong>: Build and publish interactive Killercoda tutorial</li>
+<li class=""><strong>Weeks 7–8</strong>: Produce and publish a 5–7 module video series</li>
+<li class=""><strong>Weeks 9–10</strong>: Create a 20-issue troubleshooting guide</li>
+<li class=""><strong>Weeks 11–12</strong>: Deliver use-case docs + migration guides</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-youll-build">What You’ll Build<a href="https://kubestellar-docs-demo.netlify.app/blog/mentorship-opportunity#what-youll-build" class="hash-link" aria-label="Direct link to What You’ll Build" title="Direct link to What You’ll Build" translate="no">​</a></h2>
+<p>Deliverables include:</p>
+<ul>
+<li class="">A <strong>≤ 30-minute Quickstart</strong></li>
+<li class="">A <strong>hands-on interactive tutorial</strong> (Killercoda)</li>
+<li class="">A <strong>video series</strong> (beginner → advanced)</li>
+<li class="">A <strong>troubleshooting guide</strong> with error signatures and fixes</li>
+<li class=""><strong>Use-case patterns</strong> and <strong>migration playbooks</strong></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="who-should-apply">Who Should Apply<a href="https://kubestellar-docs-demo.netlify.app/blog/mentorship-opportunity#who-should-apply" class="hash-link" aria-label="Direct link to Who Should Apply" title="Direct link to Who Should Apply" translate="no">​</a></h2>
+<p>This is a strong fit if you enjoy:</p>
+<ul>
+<li class="">Turning complex systems into clear learning journeys</li>
+<li class="">Writing docs that reduce support load and improve adoption</li>
+<li class="">Building tutorials and validation scripts</li>
+<li class="">Working in open source communities</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-apply">How to Apply<a href="https://kubestellar-docs-demo.netlify.app/blog/mentorship-opportunity#how-to-apply" class="hash-link" aria-label="Direct link to How to Apply" title="Direct link to How to Apply" translate="no">​</a></h2>
+<p>Applications are managed through the LFX Mentorship portal:</p>
+<p><code>https://mentorship.lfx.linuxfoundation.org/</code></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="get-involved">Get Involved<a href="https://kubestellar-docs-demo.netlify.app/blog/mentorship-opportunity#get-involved" class="hash-link" aria-label="Direct link to Get Involved" title="Direct link to Get Involved" translate="no">​</a></h2>
+<ul>
+<li class="">Join the KubeStellar community on CNCF Slack (<code>#kubestellar-dev</code>)</li>
+<li class="">Browse issues and discussions on GitHub</li>
+<li class="">Try the prototype site and open feedback issues</li>
+</ul>]]></content:encoded>
+            <category>lfx</category>
+            <category>mentorship</category>
+            <category>kubernetes</category>
+            <category>docs</category>
+        </item>
+        <item>
+            <title><![CDATA[Project Vision: From Zero to Multi-Cluster in 30 Minutes]]></title>
+            <link>https://kubestellar-docs-demo.netlify.app/blog/project-vision</link>
+            <guid>https://kubestellar-docs-demo.netlify.app/blog/project-vision</guid>
+            <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Problem]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-problem">The Problem<a href="https://kubestellar-docs-demo.netlify.app/blog/project-vision#the-problem" class="hash-link" aria-label="Direct link to The Problem" title="Direct link to The Problem" translate="no">​</a></h2>
+<p>Multi-cluster Kubernetes is powerful—but onboarding often isn’t.</p>
+<p>New users frequently hit friction early:</p>
+<ul>
+<li class="">Toolchain mismatches (kubectl/helm/clusteradm/kflex versions)</li>
+<li class="">Context confusion (hosting vs WDS vs ITS vs WECs)</li>
+<li class="">“It installed, but nothing syncs” (labels/selectors don’t match)</li>
+<li class="">Troubleshooting scattered across sources</li>
+</ul>
+<p>The result: <strong>time-to-first-success</strong> balloons from minutes to hours.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-vision">The Vision<a href="https://kubestellar-docs-demo.netlify.app/blog/project-vision#the-vision" class="hash-link" aria-label="Direct link to The Vision" title="Direct link to The Vision" translate="no">​</a></h2>
+<p>Deliver a documentation and self-service experience that feels like:</p>
+<ul>
+<li class=""><strong>One clear path</strong> to success (≤ 30 minutes)</li>
+<li class=""><strong>Hands-on learning</strong> without local setup (Killercoda tutorial)</li>
+<li class=""><strong>Fast diagnosis</strong> when things go wrong (20 common issues + error signatures)</li>
+<li class=""><strong>Practical patterns</strong> users can adopt immediately (use cases + migration guides)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-kubestellar">Why KubeStellar<a href="https://kubestellar-docs-demo.netlify.app/blog/project-vision#why-kubestellar" class="hash-link" aria-label="Direct link to Why KubeStellar" title="Direct link to Why KubeStellar" translate="no">​</a></h2>
+<p>KubeStellar simplifies multi-cluster operations with:</p>
+<ul>
+<li class=""><strong>WDS</strong>: define workloads and policies once using native Kubernetes objects</li>
+<li class=""><strong>ITS</strong>: inventory + transport (OCM) to clusters</li>
+<li class=""><strong>WECs</strong>: run workloads and report status</li>
+<li class=""><strong>BindingPolicy</strong>: declare what goes where using labels</li>
+</ul>
+<p>This makes multi-cluster feel like single-cluster operations—without rewriting your manifests.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-success-looks-like">What Success Looks Like<a href="https://kubestellar-docs-demo.netlify.app/blog/project-vision#what-success-looks-like" class="hash-link" aria-label="Direct link to What Success Looks Like" title="Direct link to What Success Looks Like" translate="no">​</a></h2>
+<p>We measure success with outcomes that matter:</p>
+<ul>
+<li class=""><strong>≤ 30 minutes</strong> to first successful multi-cluster deployment</li>
+<li class=""><strong>≥ 4/5</strong> user satisfaction in external testing</li>
+<li class=""><strong>8+</strong> new GitHub issues from new users (signal of engagement)</li>
+<li class=""><strong>2+</strong> documentation PRs from users (signal of contribution readiness)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="https://kubestellar-docs-demo.netlify.app/blog/project-vision#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<ul>
+<li class="">Explore the <strong><a class="" href="https://kubestellar-docs-demo.netlify.app/docs/quickstart">Quickstart Guide</a></strong></li>
+<li class="">See the <strong><a class="" href="https://kubestellar-docs-demo.netlify.app/docs/tutorials/interactive-tutorial-preview">Interactive Tutorial Preview</a></strong></li>
+<li class="">Use <strong><a class="" href="https://kubestellar-docs-demo.netlify.app/docs/troubleshooting">Troubleshooting</a></strong> when blocked</li>
+</ul>]]></content:encoded>
+            <category>lfx</category>
+            <category>documentation</category>
+            <category>onboarding</category>
+            <category>kubestellar</category>
+        </item>
+    </channel>
+</rss>

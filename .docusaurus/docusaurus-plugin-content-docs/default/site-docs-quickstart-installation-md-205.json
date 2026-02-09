@@ -1,0 +1,24 @@
+{
+  "id": "quickstart/installation",
+  "title": "Installation",
+  "description": "This guide walks you through installing KubeStellar core components. We'll create a demo environment with one hosting cluster, one ITS, one WDS, and two WECs.",
+  "source": "@site/docs/quickstart/installation.md",
+  "sourceDirName": "quickstart",
+  "slug": "/quickstart/installation",
+  "permalink": "/docs/quickstart/installation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/quickstart/installation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Prerequisites",
+    "permalink": "/docs/quickstart/prerequisites"
+  },
+  "next": {
+    "title": "First Deployment",
+    "permalink": "/docs/quickstart/first-deployment"
+  }
+}

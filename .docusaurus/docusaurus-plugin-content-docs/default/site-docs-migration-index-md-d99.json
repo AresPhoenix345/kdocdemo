@@ -1,0 +1,24 @@
+{
+  "id": "migration/index",
+  "title": "Migration Guides",
+  "description": "This section provides practical migration playbooks for teams adopting KubeStellar from other multi-cluster approaches.",
+  "source": "@site/docs/migration/index.md",
+  "sourceDirName": "migration",
+  "slug": "/migration/",
+  "permalink": "/docs/migration/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/migration/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Helm Chart Distribution",
+    "permalink": "/docs/use-cases/helm-charts"
+  },
+  "next": {
+    "title": "Migrating from ArgoCD to KubeStellar",
+    "permalink": "/docs/migration/from-argocd"
+  }
+}

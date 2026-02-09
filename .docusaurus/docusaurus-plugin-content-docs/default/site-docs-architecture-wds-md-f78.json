@@ -1,0 +1,24 @@
+{
+  "id": "architecture/wds",
+  "title": "Workload Description Space (WDS)",
+  "description": "What is a WDS?",
+  "source": "@site/docs/architecture/wds.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/wds",
+  "permalink": "/docs/architecture/wds",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/architecture/wds.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Architecture Overview",
+    "permalink": "/docs/architecture/overview"
+  },
+  "next": {
+    "title": "Inventory and Transport Space (ITS)",
+    "permalink": "/docs/architecture/its"
+  }
+}

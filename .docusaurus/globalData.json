@@ -1,0 +1,158 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "architecture/binding-policy",
+              "path": "/docs/architecture/binding-policy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/its",
+              "path": "/docs/architecture/its",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/overview",
+              "path": "/docs/architecture/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/wds",
+              "path": "/docs/architecture/wds",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/wecs",
+              "path": "/docs/architecture/wecs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "migration/from-argocd",
+              "path": "/docs/migration/from-argocd",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "migration/from-cluster-api",
+              "path": "/docs/migration/from-cluster-api",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "migration/from-karmada",
+              "path": "/docs/migration/from-karmada",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "migration/index",
+              "path": "/docs/migration/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "quickstart/first-deployment",
+              "path": "/docs/quickstart/first-deployment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "quickstart/index",
+              "path": "/docs/quickstart/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "quickstart/installation",
+              "path": "/docs/quickstart/installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "quickstart/prerequisites",
+              "path": "/docs/quickstart/prerequisites",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "troubleshooting/common-issues",
+              "path": "/docs/troubleshooting/common-issues",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "troubleshooting/error-reference",
+              "path": "/docs/troubleshooting/error-reference",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "troubleshooting/index",
+              "path": "/docs/troubleshooting/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/index",
+              "path": "/docs/tutorials/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/interactive-tutorial-preview",
+              "path": "/docs/tutorials/interactive-tutorial-preview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/video-series-outline",
+              "path": "/docs/tutorials/video-series-outline",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "use-cases/compliance",
+              "path": "/docs/use-cases/compliance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "use-cases/crd-sync",
+              "path": "/docs/use-cases/crd-sync",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "use-cases/edge-deployment",
+              "path": "/docs/use-cases/edge-deployment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "use-cases/helm-charts",
+              "path": "/docs/use-cases/helm-charts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "use-cases/index",
+              "path": "/docs/use-cases/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "use-cases/multi-cloud",
+              "path": "/docs/use-cases/multi-cloud",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

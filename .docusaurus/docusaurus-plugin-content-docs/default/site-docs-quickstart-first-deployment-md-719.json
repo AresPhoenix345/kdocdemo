@@ -1,0 +1,24 @@
+{
+  "id": "quickstart/first-deployment",
+  "title": "First Deployment",
+  "description": "Congratulations! You've installed KubeStellar. Now let's deploy your first application across multiple clusters using a BindingPolicy.",
+  "source": "@site/docs/quickstart/first-deployment.md",
+  "sourceDirName": "quickstart",
+  "slug": "/quickstart/first-deployment",
+  "permalink": "/docs/quickstart/first-deployment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/quickstart/first-deployment.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/quickstart/installation"
+  },
+  "next": {
+    "title": "Tutorials",
+    "permalink": "/docs/tutorials/"
+  }
+}

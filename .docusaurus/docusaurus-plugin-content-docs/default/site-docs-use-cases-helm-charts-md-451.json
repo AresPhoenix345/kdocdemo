@@ -1,0 +1,24 @@
+{
+  "id": "use-cases/helm-charts",
+  "title": "Helm Chart Distribution",
+  "description": "Problem Statement",
+  "source": "@site/docs/use-cases/helm-charts.md",
+  "sourceDirName": "use-cases",
+  "slug": "/use-cases/helm-charts",
+  "permalink": "/docs/use-cases/helm-charts",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/use-cases/helm-charts.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CRD Synchronization (Custom Resources Across Clusters)",
+    "permalink": "/docs/use-cases/crd-sync"
+  },
+  "next": {
+    "title": "Migration Guides",
+    "permalink": "/docs/migration/"
+  }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="240" viewBox="0 0 960 240" role="img" aria-label="12-week timeline (prototype)">
+  <style>
+    .bg { fill: #ffffff; }
+    .line { stroke: #cfd8dc; stroke-width: 6; stroke-linecap: round; }
+    .dot { fill: #4caf50; }
+    .label { font: 700 14px 'Segoe UI', Arial, sans-serif; fill: #1b1b1b; }
+    .sub { font: 12px 'Segoe UI', Arial, sans-serif; fill: #546e7a; }
+  </style>
+  <rect class="bg" x="0" y="0" width="960" height="240" rx="18"/>
+  <line class="line" x1="80" y1="120" x2="880" y2="120"/>
+
+  <!-- 6 milestones -->
+  <circle class="dot" cx="120" cy="120" r="10"/>
+  <text class="label" x="90" y="75">W1–2</text>
+  <text class="sub" x="70" y="95">Audit & friction log</text>
+
+  <circle class="dot" cx="280" cy="120" r="10"/>
+  <text class="label" x="250" y="75">W3–4</text>
+  <text class="sub" x="215" y="95">Quickstart + testing</text>
+
+  <circle class="dot" cx="440" cy="120" r="10"/>
+  <text class="label" x="410" y="75">W5–6</text>
+  <text class="sub" x="375" y="95">Interactive tutorial</text>
+
+  <circle class="dot" cx="600" cy="120" r="10"/>
+  <text class="label" x="570" y="75">W7–8</text>
+  <text class="sub" x="545" y="95">Video series</text>
+
+  <circle class="dot" cx="740" cy="120" r="10"/>
+  <text class="label" x="705" y="75">W9–10</text>
+  <text class="sub" x="678" y="95">Troubleshooting</text>
+
+  <circle class="dot" cx="860" cy="120" r="10"/>
+  <text class="label" x="830" y="75">W11–12</text>
+  <text class="sub" x="804" y="95">Use cases + migration</text>
+</svg>
+

@@ -1,0 +1,291 @@
+{
+  "/about-954": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "356a0ac6"
+  },
+  "/blog-9fe": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "133e14a3"
+      },
+      {
+        "content": "e3b3e31c"
+      }
+    ],
+    "__props": "c15d9823"
+  },
+  "/blog/archive-182": {
+    "__comp": "9e4087bc",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "__props": "f81c1134"
+  },
+  "/blog/authors-0b7": {
+    "__comp": "621db11d",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "ef8b811a"
+  },
+  "/blog/mentorship-opportunity-813": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "3364c380"
+  },
+  "/blog/project-vision-d70": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "cefac25b"
+  },
+  "/blog/tags-287": {
+    "__comp": "01a85c17",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "3a2db09e"
+  },
+  "/blog/tags/docs-5c7": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "133e14a3"
+      }
+    ],
+    "__props": "887798b8"
+  },
+  "/blog/tags/documentation-27f": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "e3b3e31c"
+      }
+    ],
+    "__props": "af8066c0"
+  },
+  "/blog/tags/kubernetes-465": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "133e14a3"
+      }
+    ],
+    "__props": "25d1f3de"
+  },
+  "/blog/tags/kubestellar-384": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "e3b3e31c"
+      }
+    ],
+    "__props": "9807d6fc"
+  },
+  "/blog/tags/lfx-4da": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "133e14a3"
+      },
+      {
+        "content": "e3b3e31c"
+      }
+    ],
+    "__props": "5cebf923"
+  },
+  "/blog/tags/mentorship-a11": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "133e14a3"
+      }
+    ],
+    "__props": "f70abb7f"
+  },
+  "/blog/tags/onboarding-c9e": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "e3b3e31c"
+      }
+    ],
+    "__props": "fe9a92c0"
+  },
+  "/docs-790": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/docs-c02": {
+    "__comp": "a7bd4aaa",
+    "__props": "0058b4c6"
+  },
+  "/docs-9de": {
+    "__comp": "a94703ab"
+  },
+  "/docs/architecture/binding-policy-2a5": {
+    "__comp": "17896441",
+    "content": "7e6a6f6f"
+  },
+  "/docs/architecture/its-9d4": {
+    "__comp": "17896441",
+    "content": "1390fba4"
+  },
+  "/docs/architecture/overview-833": {
+    "__comp": "17896441",
+    "content": "0b1ac180"
+  },
+  "/docs/architecture/wds-bdc": {
+    "__comp": "17896441",
+    "content": "f784b1c9"
+  },
+  "/docs/architecture/wecs-35f": {
+    "__comp": "17896441",
+    "content": "6c3409d4"
+  },
+  "/docs/intro-61d": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/docs/migration/-6a8": {
+    "__comp": "17896441",
+    "content": "d999df45"
+  },
+  "/docs/migration/from-argocd-e28": {
+    "__comp": "17896441",
+    "content": "85844204"
+  },
+  "/docs/migration/from-cluster-api-a54": {
+    "__comp": "17896441",
+    "content": "f2c55177"
+  },
+  "/docs/migration/from-karmada-f75": {
+    "__comp": "17896441",
+    "content": "064ae6c9"
+  },
+  "/docs/quickstart/-361": {
+    "__comp": "17896441",
+    "content": "5e8c3d05"
+  },
+  "/docs/quickstart/first-deployment-d28": {
+    "__comp": "17896441",
+    "content": "7197c7c3"
+  },
+  "/docs/quickstart/installation-52c": {
+    "__comp": "17896441",
+    "content": "205c93b5"
+  },
+  "/docs/quickstart/prerequisites-175": {
+    "__comp": "17896441",
+    "content": "4e27a074"
+  },
+  "/docs/troubleshooting/-b40": {
+    "__comp": "17896441",
+    "content": "d651e2ee"
+  },
+  "/docs/troubleshooting/common-issues-944": {
+    "__comp": "17896441",
+    "content": "5133d60e"
+  },
+  "/docs/troubleshooting/error-reference-d14": {
+    "__comp": "17896441",
+    "content": "a1f03035"
+  },
+  "/docs/tutorials/-7ab": {
+    "__comp": "17896441",
+    "content": "fea1970e"
+  },
+  "/docs/tutorials/interactive-tutorial-preview-36f": {
+    "__comp": "17896441",
+    "content": "a569497c"
+  },
+  "/docs/tutorials/video-series-outline-532": {
+    "__comp": "17896441",
+    "content": "8aac325e"
+  },
+  "/docs/use-cases/-de6": {
+    "__comp": "17896441",
+    "content": "7fb19e33"
+  },
+  "/docs/use-cases/compliance-7e4": {
+    "__comp": "17896441",
+    "content": "39eeb204"
+  },
+  "/docs/use-cases/crd-sync-234": {
+    "__comp": "17896441",
+    "content": "b7d0427e"
+  },
+  "/docs/use-cases/edge-deployment-d18": {
+    "__comp": "17896441",
+    "content": "453e9fa5"
+  },
+  "/docs/use-cases/helm-charts-854": {
+    "__comp": "17896441",
+    "content": "451af4ac"
+  },
+  "/docs/use-cases/multi-cloud-86a": {
+    "__comp": "17896441",
+    "content": "ac89437e"
+  },
+  "/-2e1": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "use-cases/multi-cloud",
+  "title": "Multi-Cloud Orchestration",
+  "description": "Problem Statement",
+  "source": "@site/docs/use-cases/multi-cloud.md",
+  "sourceDirName": "use-cases",
+  "slug": "/use-cases/multi-cloud",
+  "permalink": "/docs/use-cases/multi-cloud",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/use-cases/multi-cloud.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Edge Deployment",
+    "permalink": "/docs/use-cases/edge-deployment"
+  },
+  "next": {
+    "title": "Regional Compliance (Data Residency)",
+    "permalink": "/docs/use-cases/compliance"
+  }
+}

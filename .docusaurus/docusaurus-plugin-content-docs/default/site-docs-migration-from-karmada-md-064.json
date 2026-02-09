@@ -1,0 +1,24 @@
+{
+  "id": "migration/from-karmada",
+  "title": "Migrating from Karmada to KubeStellar",
+  "description": "Overview",
+  "source": "@site/docs/migration/from-karmada.md",
+  "sourceDirName": "migration",
+  "slug": "/migration/from-karmada",
+  "permalink": "/docs/migration/from-karmada",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/migration/from-karmada.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Migrating from ArgoCD to KubeStellar",
+    "permalink": "/docs/migration/from-argocd"
+  },
+  "next": {
+    "title": "Migrating from Cluster API to KubeStellar",
+    "permalink": "/docs/migration/from-cluster-api"
+  }
+}

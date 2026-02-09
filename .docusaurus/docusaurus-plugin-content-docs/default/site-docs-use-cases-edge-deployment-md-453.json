@@ -1,0 +1,24 @@
+{
+  "id": "use-cases/edge-deployment",
+  "title": "Edge Deployment",
+  "description": "Problem Statement",
+  "source": "@site/docs/use-cases/edge-deployment.md",
+  "sourceDirName": "use-cases",
+  "slug": "/use-cases/edge-deployment",
+  "permalink": "/docs/use-cases/edge-deployment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/use-cases/edge-deployment.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Use Cases",
+    "permalink": "/docs/use-cases/"
+  },
+  "next": {
+    "title": "Multi-Cloud Orchestration",
+    "permalink": "/docs/use-cases/multi-cloud"
+  }
+}

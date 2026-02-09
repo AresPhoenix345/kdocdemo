@@ -1,0 +1,20 @@
+{
+  "id": "architecture/binding-policy",
+  "title": "BindingPolicy",
+  "description": "What is a BindingPolicy?",
+  "source": "@site/docs/architecture/binding-policy.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/binding-policy",
+  "permalink": "/docs/architecture/binding-policy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/architecture/binding-policy.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Workload Execution Clusters (WECs)",
+    "permalink": "/docs/architecture/wecs"
+  }
+}

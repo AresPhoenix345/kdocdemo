@@ -1,0 +1,24 @@
+{
+  "id": "troubleshooting/index",
+  "title": "Troubleshooting Guide",
+  "description": "This comprehensive troubleshooting guide covers 20 common issues you might encounter when using KubeStellar, along with their symptoms, root causes, and step-by-step resolutions.",
+  "source": "@site/docs/troubleshooting/index.md",
+  "sourceDirName": "troubleshooting",
+  "slug": "/troubleshooting/",
+  "permalink": "/docs/troubleshooting/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/troubleshooting/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Video Tutorial Series Outline",
+    "permalink": "/docs/tutorials/video-series-outline"
+  },
+  "next": {
+    "title": "Common Issues (20)",
+    "permalink": "/docs/troubleshooting/common-issues"
+  }
+}

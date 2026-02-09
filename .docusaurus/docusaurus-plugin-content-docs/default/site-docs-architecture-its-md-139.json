@@ -1,0 +1,24 @@
+{
+  "id": "architecture/its",
+  "title": "Inventory and Transport Space (ITS)",
+  "description": "What is an ITS?",
+  "source": "@site/docs/architecture/its.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/its",
+  "permalink": "/docs/architecture/its",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/architecture/its.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Workload Description Space (WDS)",
+    "permalink": "/docs/architecture/wds"
+  },
+  "next": {
+    "title": "Workload Execution Clusters (WECs)",
+    "permalink": "/docs/architecture/wecs"
+  }
+}

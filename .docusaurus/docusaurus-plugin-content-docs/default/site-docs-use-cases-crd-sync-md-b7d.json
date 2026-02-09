@@ -1,0 +1,24 @@
+{
+  "id": "use-cases/crd-sync",
+  "title": "CRD Synchronization (Custom Resources Across Clusters)",
+  "description": "Problem Statement",
+  "source": "@site/docs/use-cases/crd-sync.md",
+  "sourceDirName": "use-cases",
+  "slug": "/use-cases/crd-sync",
+  "permalink": "/docs/use-cases/crd-sync",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/use-cases/crd-sync.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Regional Compliance (Data Residency)",
+    "permalink": "/docs/use-cases/compliance"
+  },
+  "next": {
+    "title": "Helm Chart Distribution",
+    "permalink": "/docs/use-cases/helm-charts"
+  }
+}

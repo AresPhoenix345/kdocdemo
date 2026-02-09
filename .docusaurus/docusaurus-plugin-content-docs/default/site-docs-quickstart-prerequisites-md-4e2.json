@@ -1,0 +1,24 @@
+{
+  "id": "quickstart/prerequisites",
+  "title": "Prerequisites",
+  "description": "Before installing KubeStellar, you need to install and configure several tools. This guide will help you verify and install all prerequisites.",
+  "source": "@site/docs/quickstart/prerequisites.md",
+  "sourceDirName": "quickstart",
+  "slug": "/quickstart/prerequisites",
+  "permalink": "/docs/quickstart/prerequisites",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/quickstart/prerequisites.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quickstart Guide",
+    "permalink": "/docs/quickstart/"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/docs/quickstart/installation"
+  }
+}

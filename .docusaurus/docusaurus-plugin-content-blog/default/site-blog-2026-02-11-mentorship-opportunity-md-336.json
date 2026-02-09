@@ -1,0 +1,60 @@
+{
+  "permalink": "/blog/mentorship-opportunity",
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/blog/2026-02-11-mentorship-opportunity.md",
+  "source": "@site/blog/2026-02-11-mentorship-opportunity.md",
+  "title": "Mentorship Opportunity: Build the Future of KubeStellar Onboarding",
+  "description": "Opportunity Summary",
+  "date": "2026-02-11T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "lfx",
+      "permalink": "/blog/tags/lfx"
+    },
+    {
+      "inline": true,
+      "label": "mentorship",
+      "permalink": "/blog/tags/mentorship"
+    },
+    {
+      "inline": true,
+      "label": "kubernetes",
+      "permalink": "/blog/tags/kubernetes"
+    },
+    {
+      "inline": true,
+      "label": "docs",
+      "permalink": "/blog/tags/docs"
+    }
+  ],
+  "readingTime": 1,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "KubeStellar Community",
+      "title": "CNCF Sandbox — Multi-cluster configuration management",
+      "url": "https://github.com/kubestellar/kubestellar",
+      "imageURL": "/img/logo.svg",
+      "key": "kubestellar",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "slug": "mentorship-opportunity",
+    "title": "Mentorship Opportunity: Build the Future of KubeStellar Onboarding",
+    "authors": [
+      "kubestellar"
+    ],
+    "tags": [
+      "lfx",
+      "mentorship",
+      "kubernetes",
+      "docs"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Project Vision: From Zero to Multi-Cluster in 30 Minutes",
+    "permalink": "/blog/project-vision"
+  }
+}

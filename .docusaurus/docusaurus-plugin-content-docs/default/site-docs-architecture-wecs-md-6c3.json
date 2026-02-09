@@ -1,0 +1,24 @@
+{
+  "id": "architecture/wecs",
+  "title": "Workload Execution Clusters (WECs)",
+  "description": "What is a WEC?",
+  "source": "@site/docs/architecture/wecs.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/wecs",
+  "permalink": "/docs/architecture/wecs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/architecture/wecs.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Inventory and Transport Space (ITS)",
+    "permalink": "/docs/architecture/its"
+  },
+  "next": {
+    "title": "BindingPolicy",
+    "permalink": "/docs/architecture/binding-policy"
+  }
+}

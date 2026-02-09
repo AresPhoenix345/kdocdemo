@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-troubleshooting/common-issues" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Common Issues (20) | KubeStellar Documentation Initiative</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://kubestellar-docs-demo.netlify.app/img/logo.svg"><meta data-rh="true" name="twitter:image" content="https://kubestellar-docs-demo.netlify.app/img/logo.svg"><meta data-rh="true" property="og:url" content="https://kubestellar-docs-demo.netlify.app/docs/troubleshooting/common-issues"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Common Issues (20) | KubeStellar Documentation Initiative"><meta data-rh="true" name="description" content="This page contains 20 common issues encountered when installing and operating KubeStellar. Each entry includes symptoms, logs, root cause, resolution, prevention, and related commands."><meta data-rh="true" property="og:description" content="This page contains 20 common issues encountered when installing and operating KubeStellar. Each entry includes symptoms, logs, root cause, resolution, prevention, and related commands."><link data-rh="true" rel="icon" href="/img/logo.svg"><link data-rh="true" rel="canonical" href="https://kubestellar-docs-demo.netlify.app/docs/troubleshooting/common-issues"><link data-rh="true" rel="alternate" href="https://kubestellar-docs-demo.netlify.app/docs/troubleshooting/common-issues" hreflang="en"><link data-rh="true" rel="alternate" href="https://kubestellar-docs-demo.netlify.app/docs/troubleshooting/common-issues" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Common Issues (20)","item":"https://kubestellar-docs-demo.netlify.app/docs/troubleshooting/common-issues"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="KubeStellar Documentation Initiative RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="KubeStellar Documentation Initiative Atom Feed"><link rel="stylesheet" href="/assets/css/styles.0014b427.css">
+<script src="/assets/js/runtime~main.36ce07b2.js" defer="defer"></script>
+<script src="/assets/js/main.8fdd9517.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="KubeStellar Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="KubeStellar Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">KubeStellar Docs Initiative</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Documentation</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/kubestellar/kubestellar" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro"><span title="Welcome to the KubeStellar Documentation Initiative" class="linkLabel_WmDU">Welcome to the KubeStellar Documentation Initiative</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/quickstart/"><span title="Quickstart Guide" class="categoryLinkLabel_W154">Quickstart Guide</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/tutorials/"><span title="Tutorials" class="categoryLinkLabel_W154">Tutorials</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/troubleshooting/"><span title="Troubleshooting" class="categoryLinkLabel_W154">Troubleshooting</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/troubleshooting/"><span title="Troubleshooting Guide" class="linkLabel_WmDU">Troubleshooting Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/troubleshooting/common-issues"><span title="Common Issues (20)" class="linkLabel_WmDU">Common Issues (20)</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/troubleshooting/error-reference"><span title="Error Reference" class="linkLabel_WmDU">Error Reference</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/use-cases/"><span title="Use Cases" class="categoryLinkLabel_W154">Use Cases</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/migration/"><span title="Migration Guides" class="categoryLinkLabel_W154">Migration Guides</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/architecture/overview"><span title="Architecture" class="categoryLinkLabel_W154">Architecture</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Troubleshooting</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Common Issues (20)</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Common Issues (20)</h1></header>
+<p>This page contains <strong>20 common issues</strong> encountered when installing and operating KubeStellar. Each entry includes symptoms, logs, root cause, resolution, prevention, and related commands.</p>
+<blockquote>
+<p>Tip: Start by confirming which context you’re targeting (<code>wds1</code> vs <code>its1</code> vs a WEC context) and collecting logs from the controller pods in the hosting cluster namespace (commonly <code>kubeflex-system</code>).</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-1-wec-registration-fails">Issue #1: WEC Registration Fails<a href="#issue-1-wec-registration-fails" class="hash-link" aria-label="Direct link to Issue #1: WEC Registration Fails" title="Direct link to Issue #1: WEC Registration Fails" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class=""><code>clusteradm join</code> fails or times out</li>
+<li class=""><code>ManagedCluster</code> status stays <code>Unknown</code> / <code>Offline</code></li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ERROR unable to join cluster: connection refused</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">WEC cannot reach ITS API endpoint</li>
+<li class="">Wrong hub API server passed to <code>clusteradm join</code></li>
+<li class="">Firewall / proxy blocks OCM traffic</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Confirm ITS endpoint:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl config view </span><span class="token parameter variable" style="color:#36acaa">--minify</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">-o</span><span class="token plain"> </span><span class="token assign-left variable" style="color:#36acaa">jsonpath</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&#x27;{.clusters[0].cluster.server}&#x27;</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin class-name">echo</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">From the WEC, test connectivity (best-effort):</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token function" style="color:#d73a49">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">-k</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;</span><span class="token string variable" style="color:#36acaa">$(</span><span class="token string variable" style="color:#36acaa">kubectl config view </span><span class="token string variable parameter variable" style="color:#36acaa">-o</span><span class="token string variable" style="color:#36acaa"> </span><span class="token string variable assign-left variable" style="color:#36acaa">jsonpath</span><span class="token string variable operator" style="color:#393A34">=</span><span class="token string variable string" style="color:#e3116c">&#x27;{.clusters[?(@.name==&quot;its1&quot;)].cluster.server}&#x27;</span><span class="token string variable" style="color:#36acaa">)</span><span class="token string" style="color:#e3116c">&quot;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<ol start="3">
+<li class="">Re-run join with the correct hub apiserver/token.</li>
+<li class="">Verify OCM agent namespaces/pods exist on the WEC.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Validate network reachability before joining</li>
+<li class="">Keep a small script that prints hub endpoint + token status</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get managedclusters </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">clusteradm get token </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-2-helm-chart-installation-fails">Issue #2: Helm Chart Installation Fails<a href="#issue-2-helm-chart-installation-fails" class="hash-link" aria-label="Direct link to Issue #2: Helm Chart Installation Fails" title="Direct link to Issue #2: Helm Chart Installation Fails" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class=""><code>helm upgrade --install ... oci://ghcr.io/...</code> fails</li>
+<li class="">Helm cannot pull chart or images</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">failed to fetch oci chart: unauthorized: authentication required</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Corporate proxy blocks <code>ghcr.io</code></li>
+<li class="">Helm OCI registry auth issues</li>
+<li class="">Network/DNS problems</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Verify registry reachability:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token function" style="color:#d73a49">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">-I</span><span class="token plain"> https://ghcr.io </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Ensure Helm supports OCI (Helm 3+ does).</li>
+<li class="">If auth is required in your environment, perform registry login:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">helm registry login ghcr.io</span><br></span></code></pre></div></div>
+<ol start="4">
+<li class="">Retry installation.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Document proxy and registry requirements up front</li>
+<li class="">Provide “offline mirror” instructions for restricted environments</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">helm version</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">helm upgrade </span><span class="token parameter variable" style="color:#36acaa">--install</span><span class="token plain"> ks-core oci://ghcr.io/kubestellar/kubestellar/core-chart </span><span class="token parameter variable" style="color:#36acaa">--version</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;</span><span class="token string variable" style="color:#36acaa">$kubestellar_version</span><span class="token string" style="color:#e3116c">&quot;</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-3-context-creation-fails">Issue #3: Context Creation Fails<a href="#issue-3-context-creation-fails" class="hash-link" aria-label="Direct link to Issue #3: Context Creation Fails" title="Direct link to Issue #3: Context Creation Fails" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class=""><code>kflex ctx --overwrite-existing-context wds1</code> fails</li>
+<li class="">Context points to the wrong cluster</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">error: hosting context not set</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">KubeFlex “hosting cluster” extension state in kubeconfig is missing or wrong</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Switch to the hosting cluster context (e.g., <code>kind-kubeflex</code>).</li>
+<li class="">Set hosting context:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kflex ctx --set-current-for-hosting</span><br></span></code></pre></div></div>
+<ol start="3">
+<li class="">Recreate contexts:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kflex ctx --overwrite-existing-context its1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kflex ctx --overwrite-existing-context wds1</span><br></span></code></pre></div></div>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Always run <code>kflex ctx --set-current-for-hosting</code> after (re)installing via Helm</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl config get-contexts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kflex version</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-4-version-compatibility-issues">Issue #4: Version Compatibility Issues<a href="#issue-4-version-compatibility-issues" class="hash-link" aria-label="Direct link to Issue #4: Version Compatibility Issues" title="Direct link to Issue #4: Version Compatibility Issues" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Pre-req checks fail</li>
+<li class="">Controllers crashloop after install</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">structured version ... is less than required minimum</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class=""><code>clusteradm</code> version is incompatible (too old or too new)</li>
+<li class="">Mixed versions across KubeStellar/KubeFlex</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Run the upstream pre-req checker:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token function" style="color:#d73a49">bash</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token punctuation" style="color:#393A34">(</span><span class="token function" style="color:#d73a49">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">-s</span><span class="token plain"> https://raw.githubusercontent.com/kubestellar/kubestellar/</span><span class="token string" style="color:#e3116c">&quot;</span><span class="token string variable" style="color:#36acaa">$kubestellar_version</span><span class="token string" style="color:#e3116c">&quot;</span><span class="token plain">/scripts/check_pre_req.sh</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> kflex ocm helm kubectl </span><span class="token function" style="color:#d73a49">docker</span><span class="token plain"> kind</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Align tool versions to the documented matrix (release notes).</li>
+<li class="">Reinstall if necessary.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Pin versions in docs and scripts</li>
+<li class="">Add a “known good” quickstart toolchain block</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">clusteradm version</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kflex version</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl version </span><span class="token parameter variable" style="color:#36acaa">--client</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">helm version</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-5-bindingpolicy-not-working">Issue #5: BindingPolicy Not Working<a href="#issue-5-bindingpolicy-not-working" class="hash-link" aria-label="Direct link to Issue #5: BindingPolicy Not Working" title="Direct link to Issue #5: BindingPolicy Not Working" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class=""><code>kubectl apply -f bindingpolicy.yaml</code> fails</li>
+<li class="">API server says kind not recognized</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">no matches for kind &quot;BindingPolicy&quot; in version &quot;control.kubestellar.io/v1alpha1&quot;</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">KubeStellar CRDs not installed in the WDS</li>
+<li class="">You are applying to the wrong context (not WDS)</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Confirm you are in the WDS context:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl config current-context</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Check CRDs (in WDS):</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl api-resources </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">grep</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">-i</span><span class="token plain"> kubestellar</span><br></span></code></pre></div></div>
+<ol start="3">
+<li class="">If missing, verify core installation completed and WDS exists; re-run Helm install if needed.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Add “context sanity check” callouts in docs</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get crd </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">grep</span><span class="token plain"> kubestellar </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-6-bindingpolicy-not-matching-objects">Issue #6: BindingPolicy Not Matching Objects<a href="#issue-6-bindingpolicy-not-matching-objects" class="hash-link" aria-label="Direct link to Issue #6: BindingPolicy Not Matching Objects" title="Direct link to Issue #6: BindingPolicy Not Matching Objects" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class=""><code>BindingPolicy</code> exists, but <strong>nothing is selected</strong> (no objects downsynced)</li>
+<li class="">The generated <code>Binding</code> shows <strong>zero workload objects</strong></li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">no objects matched objectSelectors</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Workload labels don’t match <code>objectSelectors</code></li>
+<li class="">Objects exist in a different namespace than you assumed</li>
+<li class=""><code>resources</code> list doesn’t include the kinds you expected</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Confirm the workload labels in the <strong>WDS</strong>:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> wds1 get deploy </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> --show-labels</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Inspect your policy:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> wds1 get bindingpolicy </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">-o</span><span class="token plain"> yaml </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">head</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">120</span><br></span></code></pre></div></div>
+<ol start="3">
+<li class="">Inspect the generated <code>Binding</code> (concrete matches):</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> wds1 get bindings </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> wds1 describe binding </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">ns</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">binding-name</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<ol start="4">
+<li class="">Fix labels to match (either the workload or the policy).</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Standardize on <code>app.kubernetes.io/name</code> and <code>app.kubernetes.io/part-of</code></li>
+<li class="">Add a “label checklist” section to your quickstart</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> wds1 get deploy </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> --show-labels</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> wds1 get bindingpolicies </span><span class="token parameter variable" style="color:#36acaa">-A</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-7-bindingpolicy-not-matching-clusters">Issue #7: BindingPolicy Not Matching Clusters<a href="#issue-7-bindingpolicy-not-matching-clusters" class="hash-link" aria-label="Direct link to Issue #7: BindingPolicy Not Matching Clusters" title="Direct link to Issue #7: BindingPolicy Not Matching Clusters" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Workloads go to <strong>no clusters</strong> (or the wrong set)</li>
+<li class=""><code>Binding</code> shows <strong>0 matched clusters</strong></li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">clusterSelectors matched 0 clusters</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class=""><code>ManagedCluster</code> objects in the ITS are not labeled as expected</li>
+<li class="">You’re inspecting/labeling a different ITS than the one used for transport</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Inspect cluster labels (ITS context):</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get managedclusters </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1 --show-labels</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Add or fix labels:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl label managedcluster </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1 cluster1 location-group</span><span class="token operator" style="color:#393A34">=</span><span class="token plain">edge </span><span class="token parameter variable" style="color:#36acaa">--overwrite</span><br></span></code></pre></div></div>
+<ol start="3">
+<li class="">Re-evaluate <code>clusterSelectors</code>.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Establish a standard label taxonomy: <code>environment</code>, <code>region</code>, <code>location-group</code>, <code>provider</code></li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl describe managedcluster </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1 cluster1</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-8-namespace-missing-on-wecs">Issue #8: Namespace Exists in WDS but Not on WECs<a href="#issue-8-namespace-missing-on-wecs" class="hash-link" aria-label="Direct link to Issue #8: Namespace Exists in WDS but Not on WECs" title="Direct link to Issue #8: Namespace Exists in WDS but Not on WECs" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Workload objects appear on WECs <strong>partially</strong></li>
+<li class="">Namespaced resources fail because the namespace doesn’t exist</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">namespaces &quot;demo&quot; not found</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class=""><code>BindingPolicy</code> doesn’t include <code>namespaces</code> in <code>resources</code></li>
+<li class="">Using <code>createOnly</code> clauses incorrectly</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Add <code>namespaces</code> to policy downsync resources:</li>
+</ol>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">downsync</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">objectSelectors</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">matchLabels</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token key atrule" style="color:#00a4db">app.kubernetes.io/name</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> nginx</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">resources</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> namespaces</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> deployments</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Re-apply BindingPolicy and wait for sync.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Always include <code>namespaces</code> when downsyncing namespaced objects into new namespaces</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get ns </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1 </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">grep</span><span class="token plain"> demo </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-9-status-collection-not-working">Issue #9: Status Collection Not Working<a href="#issue-9-status-collection-not-working" class="hash-link" aria-label="Direct link to Issue #9: Status Collection Not Working" title="Direct link to Issue #9: Status Collection Not Working" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Workloads deploy to WECs, but <strong>status in WDS</strong> is missing/stale</li>
+<li class="">You can see pods on WECs, but WDS does not reflect progress</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">WorkStatus not found / CombinedStatus missing results</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Status add-on components not healthy in ITS/WEC</li>
+<li class="">Agent cannot report status (RBAC/network)</li>
+<li class="">Collector configuration missing/misconfigured (depending on setup)</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Verify WECs are <code>Available</code> in the ITS:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1 get managedclusters</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Check for status-related objects in ITS (names vary by setup):</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1 get workstatus </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1 get appliedmanifestworks </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<ol start="3">
+<li class="">Check OCM agent + addon pods on the WEC:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1 get pods </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> findstr /i </span><span class="token string" style="color:#e3116c">&quot;open-cluster-management&quot;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<ol start="4">
+<li class="">Inspect transport/controller logs in the hosting cluster:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl logs </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> kubeflex-system </span><span class="token parameter variable" style="color:#36acaa">-l</span><span class="token plain"> </span><span class="token assign-left variable" style="color:#36acaa">app</span><span class="token operator" style="color:#393A34">=</span><span class="token plain">transport-controller </span><span class="token parameter variable" style="color:#36acaa">--tail</span><span class="token operator" style="color:#393A34">=</span><span class="token number" style="color:#36acaa">200</span><br></span></code></pre></div></div>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Include “status expectations” and verification checks in quickstart</li>
+<li class="">Provide a “known-good” status validation script</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> wds1 get bindings </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1 get managedclusters</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-10-workload-synchronization-issues">Issue #10: Workload Synchronization Issues<a href="#issue-10-workload-synchronization-issues" class="hash-link" aria-label="Direct link to Issue #10: Workload Synchronization Issues" title="Direct link to Issue #10: Workload Synchronization Issues" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Changes in WDS take minutes to appear on WECs</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">requeueing due to backoff</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Resource pressure on controllers</li>
+<li class="">High API server latency</li>
+<li class="">Many objects/clusters causing scaling pressure</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Check controller pod health and CPU/memory:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token function" style="color:#d73a49">top</span><span class="token plain"> pods </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> kubeflex-system </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Reduce noise: limit selectors, reduce object scope, test with a small workload.</li>
+<li class="">Scale controller deployments if appropriate (prototype note).</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Provide sizing guidance for demo vs production</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get deploy </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> kubeflex-system</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-11-crd-synchronization-problems">Issue #11: CRD Synchronization Problems<a href="#issue-11-crd-synchronization-problems" class="hash-link" aria-label="Direct link to Issue #11: CRD Synchronization Problems" title="Direct link to Issue #11: CRD Synchronization Problems" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">CustomResources fail to apply on WEC</li>
+<li class="">WEC reports unknown kind</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">no matches for kind &quot;Foo&quot; in version &quot;example.com/v1&quot;</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">CRD not installed on WECs</li>
+<li class="">Ordering issue: CRs delivered before CRDs</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Ensure CRDs are installed/synced before CRs.</li>
+<li class="">Add a policy clause for CRDs first (or pre-install CRDs on WECs).</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Document CRD-first ordering strategy</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get crd </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1 </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">grep</span><span class="token plain"> example.com </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-12-helm-chart-deployment-issues">Issue #12: Helm Chart Deployment Issues<a href="#issue-12-helm-chart-deployment-issues" class="hash-link" aria-label="Direct link to Issue #12: Helm Chart Deployment Issues" title="Direct link to Issue #12: Helm Chart Deployment Issues" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Helm releases inconsistent across WECs</li>
+<li class="">Values differ unintentionally</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Error: rendered manifests contain a resource that already exists</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Chart assumptions conflict with existing resources</li>
+<li class="">Namespace collisions</li>
+<li class="">Different cluster capabilities</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Use a dedicated namespace per release.</li>
+<li class="">Ensure consistent value overrides for cluster-specific needs.</li>
+<li class="">Validate with a single WEC first.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Provide “Helm distribution pattern” docs and templates</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">helm list </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> --kube-context cluster1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">helm list </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> --kube-context cluster2</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-13-transform-configuration-errors">Issue #13: Transform Configuration Errors<a href="#issue-13-transform-configuration-errors" class="hash-link" aria-label="Direct link to Issue #13: Transform Configuration Errors" title="Direct link to Issue #13: Transform Configuration Errors" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Objects reach WECs but are malformed or rejected</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">admission webhook denied the request: validation failed</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Transform template produces invalid YAML/fields</li>
+<li class="">WEC has stricter policies (PSA, Gatekeeper)</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Validate manifests produced by transforms.</li>
+<li class="">Check WEC admission policies.</li>
+<li class="">Start with minimal transforms and iterate.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Provide “transform testing harness” instructions</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get customtransforms </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl logs </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> kubeflex-system </span><span class="token parameter variable" style="color:#36acaa">-l</span><span class="token plain"> </span><span class="token assign-left variable" style="color:#36acaa">app</span><span class="token operator" style="color:#393A34">=</span><span class="token plain">transport-controller</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-14-network-policies-blocking-traffic">Issue #14: Network Policies Blocking Traffic<a href="#issue-14-network-policies-blocking-traffic" class="hash-link" aria-label="Direct link to Issue #14: Network Policies Blocking Traffic" title="Direct link to Issue #14: Network Policies Blocking Traffic" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">WEC agents can’t reach ITS</li>
+<li class="">Workloads can’t reach dependencies</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">i/o timeout</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Default-deny NetworkPolicy in critical namespaces</li>
+<li class="">Egress blocked to ITS endpoint</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">List NetworkPolicies on WEC:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get networkpolicy </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Allow required egress for OCM agents and workloads.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Document baseline network policy requirements</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get pods </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> open-cluster-management-agent </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-15-ocm-agent-connection-issues">Issue #15: OCM Agent Connection Issues<a href="#issue-15-ocm-agent-connection-issues" class="hash-link" aria-label="Direct link to Issue #15: OCM Agent Connection Issues" title="Direct link to Issue #15: OCM Agent Connection Issues" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">ManagedCluster goes Offline</li>
+<li class=""><code>open-cluster-management-agent</code> pods restarting</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">failed to get bootstrap kubeconfig</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Token expired/invalid</li>
+<li class="">Hub endpoint changed</li>
+<li class="">RBAC issues on WEC</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Inspect agent pods:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get pods </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> open-cluster-management-agent </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl logs </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> open-cluster-management-agent </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1 </span><span class="token parameter variable" style="color:#36acaa">-l</span><span class="token plain"> </span><span class="token assign-left variable" style="color:#36acaa">app</span><span class="token operator" style="color:#393A34">=</span><span class="token plain">klusterlet </span><span class="token parameter variable" style="color:#36acaa">--tail</span><span class="token operator" style="color:#393A34">=</span><span class="token number" style="color:#36acaa">200</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Re-join the WEC with a fresh token if needed.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Rotate tokens carefully; document rejoin procedure</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">clusteradm get token </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> its1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">clusteradm </span><span class="token function" style="color:#d73a49">join</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">--help</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-16-auth-authorization">Issue #16: Authentication/Authorization Errors<a href="#issue-16-auth-authorization" class="hash-link" aria-label="Direct link to Issue #16: Authentication/Authorization Errors" title="Direct link to Issue #16: Authentication/Authorization Errors" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class=""><code>Forbidden</code> when reading/writing resources in WDS/ITS</li>
+<li class="">Setup steps fail even though contexts exist</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Error from server (Forbidden): ... is forbidden: User ... cannot ...</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Missing RBAC in WDS/ITS</li>
+<li class="">Wrong kubeconfig context/user identity</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Confirm identity:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl auth </span><span class="token function" style="color:#d73a49">whoami</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Check access:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl auth can-i create bindingpolicies.control.kubestellar.io </span><span class="token parameter variable" style="color:#36acaa">-A</span><br></span></code></pre></div></div>
+<ol start="3">
+<li class="">Fix RBAC or use a privileged context for setup.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Provide pre-made RBAC roles for common personas (platform admin, app team)</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get clusterrolebinding </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">head</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-17-multi-tenancy-conflicts">Issue #17: Multi-Tenancy Conflicts (Quota + Namespace)<a href="#issue-17-multi-tenancy-conflicts" class="hash-link" aria-label="Direct link to Issue #17: Multi-Tenancy Conflicts (Quota + Namespace)" title="Direct link to Issue #17: Multi-Tenancy Conflicts (Quota + Namespace)" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Pods not created; events mention <strong>quota exceeded</strong></li>
+<li class="">Unexpected collisions from shared namespaces</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">exceeded quota: compute-resources</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Namespace quotas too strict on a WEC</li>
+<li class="">Multiple teams targeting the same namespace/resource names</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Inspect ResourceQuota:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get resourcequota </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> demo </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1 </span><span class="token parameter variable" style="color:#36acaa">-o</span><span class="token plain"> yaml</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Increase quota or reduce requested resources.</li>
+<li class="">Adopt unique namespaces per team/app and consistent naming.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Provide recommended quotas for tutorial namespaces</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl describe </span><span class="token function" style="color:#d73a49">quota</span><span class="token plain"> </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> demo </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-18-storage-issues">Issue #18: Storage Issues<a href="#issue-18-storage-issues" class="hash-link" aria-label="Direct link to Issue #18: Storage Issues" title="Direct link to Issue #18: Storage Issues" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Pods stuck <code>Pending</code> due to PVC issues</li>
+<li class="">Events show missing <code>StorageClass</code> or volume provisioning failures</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">failed to provision volume with StorageClass</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">No default <code>StorageClass</code> on the WEC</li>
+<li class="">Cloud CSI not installed / misconfigured</li>
+<li class="">Storage policies block provisioning</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Check PVC events:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1 get pvc </span><span class="token parameter variable" style="color:#36acaa">-A</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1 describe pvc </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">ns</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">pvc-name</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Check StorageClasses:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1 get storageclass</span><br></span></code></pre></div></div>
+<ol start="3">
+<li class="">Install/enable a CSI driver or set a default StorageClass.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Validate WEC baseline capabilities before onboarding (CNI + DNS + StorageClass)</li>
+<li class="">Provide “WEC readiness checks” in onboarding docs</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get ns </span><span class="token parameter variable" style="color:#36acaa">--context</span><span class="token plain"> cluster1</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-19-upgrade-problems">Issue #19: Upgrade Problems<a href="#issue-19-upgrade-problems" class="hash-link" aria-label="Direct link to Issue #19: Upgrade Problems" title="Direct link to Issue #19: Upgrade Problems" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">After upgrade, policies stop syncing or controllers crashloop</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">failed to decode object: unknown field</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">CRD schema changes</li>
+<li class="">Mixed controller versions across components</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Review release notes and upgrade path.</li>
+<li class="">Upgrade CRDs first if required.</li>
+<li class="">Restart controller deployments after upgrade.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Provide explicit upgrade playbooks + compatibility notes</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">helm </span><span class="token function" style="color:#d73a49">history</span><span class="token plain"> ks-core</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl rollout status deploy </span><span class="token parameter variable" style="color:#36acaa">-n</span><span class="token plain"> kubeflex-system </span><span class="token parameter variable" style="color:#36acaa">--all</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issue-20-cleanup-and-uninstallation">Issue #20: Cleanup and Uninstallation<a href="#issue-20-cleanup-and-uninstallation" class="hash-link" aria-label="Direct link to Issue #20: Cleanup and Uninstallation" title="Direct link to Issue #20: Cleanup and Uninstallation" translate="no">​</a></h3>
+<p><strong>Symptoms</strong>:</p>
+<ul>
+<li class="">Reinstall fails due to leftover resources</li>
+<li class="">Old contexts remain in kubeconfig</li>
+</ul>
+<p><strong>Log Signature</strong>:</p>
+<div class="language-log codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-log codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cannot re-use a name that is still in use</span><br></span></code></pre></div></div>
+<p><strong>Root Cause</strong>:</p>
+<ul>
+<li class="">Kind/k3d clusters still exist</li>
+<li class="">Helm release not fully removed</li>
+<li class="">kubeconfig contexts not deleted</li>
+</ul>
+<p><strong>Resolution Steps</strong>:</p>
+<ol>
+<li class="">Remove Helm release:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">helm uninstall ks-core </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<ol start="2">
+<li class="">Delete demo clusters and contexts:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kind delete cluster </span><span class="token parameter variable" style="color:#36acaa">--name</span><span class="token plain"> kubeflex </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kind delete cluster </span><span class="token parameter variable" style="color:#36acaa">--name</span><span class="token plain"> cluster1 </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kind delete cluster </span><span class="token parameter variable" style="color:#36acaa">--name</span><span class="token plain"> cluster2 </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl config delete-context its1 </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">kubectl config delete-context wds1 </span><span class="token operator" style="color:#393A34">||</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><br></span></code></pre></div></div>
+<ol start="3">
+<li class="">Re-run install from scratch.</li>
+</ol>
+<p><strong>Prevention</strong>:</p>
+<ul>
+<li class="">Provide a one-command cleanup script for demos</li>
+</ul>
+<p><strong>Related Commands</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl config get-contexts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">helm list </span><span class="token parameter variable" style="color:#36acaa">-A</span><br></span></code></pre></div></div></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/troubleshooting/common-issues.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/troubleshooting/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Troubleshooting Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/troubleshooting/error-reference"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Error Reference</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#issue-1-wec-registration-fails" class="table-of-contents__link toc-highlight">Issue #1: WEC Registration Fails</a></li><li><a href="#issue-2-helm-chart-installation-fails" class="table-of-contents__link toc-highlight">Issue #2: Helm Chart Installation Fails</a></li><li><a href="#issue-3-context-creation-fails" class="table-of-contents__link toc-highlight">Issue #3: Context Creation Fails</a></li><li><a href="#issue-4-version-compatibility-issues" class="table-of-contents__link toc-highlight">Issue #4: Version Compatibility Issues</a></li><li><a href="#issue-5-bindingpolicy-not-working" class="table-of-contents__link toc-highlight">Issue #5: BindingPolicy Not Working</a></li><li><a href="#issue-6-bindingpolicy-not-matching-objects" class="table-of-contents__link toc-highlight">Issue #6: BindingPolicy Not Matching Objects</a></li><li><a href="#issue-7-bindingpolicy-not-matching-clusters" class="table-of-contents__link toc-highlight">Issue #7: BindingPolicy Not Matching Clusters</a></li><li><a href="#issue-8-namespace-missing-on-wecs" class="table-of-contents__link toc-highlight">Issue #8: Namespace Exists in WDS but Not on WECs</a></li><li><a href="#issue-9-status-collection-not-working" class="table-of-contents__link toc-highlight">Issue #9: Status Collection Not Working</a></li><li><a href="#issue-10-workload-synchronization-issues" class="table-of-contents__link toc-highlight">Issue #10: Workload Synchronization Issues</a></li><li><a href="#issue-11-crd-synchronization-problems" class="table-of-contents__link toc-highlight">Issue #11: CRD Synchronization Problems</a></li><li><a href="#issue-12-helm-chart-deployment-issues" class="table-of-contents__link toc-highlight">Issue #12: Helm Chart Deployment Issues</a></li><li><a href="#issue-13-transform-configuration-errors" class="table-of-contents__link toc-highlight">Issue #13: Transform Configuration Errors</a></li><li><a href="#issue-14-network-policies-blocking-traffic" class="table-of-contents__link toc-highlight">Issue #14: Network Policies Blocking Traffic</a></li><li><a href="#issue-15-ocm-agent-connection-issues" class="table-of-contents__link toc-highlight">Issue #15: OCM Agent Connection Issues</a></li><li><a href="#issue-16-auth-authorization" class="table-of-contents__link toc-highlight">Issue #16: Authentication/Authorization Errors</a></li><li><a href="#issue-17-multi-tenancy-conflicts" class="table-of-contents__link toc-highlight">Issue #17: Multi-Tenancy Conflicts (Quota + Namespace)</a></li><li><a href="#issue-18-storage-issues" class="table-of-contents__link toc-highlight">Issue #18: Storage Issues</a></li><li><a href="#issue-19-upgrade-problems" class="table-of-contents__link toc-highlight">Issue #19: Upgrade Problems</a></li><li><a href="#issue-20-cleanup-and-uninstallation" class="table-of-contents__link toc-highlight">Issue #20: Cleanup and Uninstallation</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/quickstart">Quickstart</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/tutorials">Tutorials</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/use-cases">Use Cases</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/migration">Migration Guides</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://cloud-native.slack.com/archives/C097094RZ3M" target="_blank" rel="noopener noreferrer" class="footer__link-item">CNCF Slack<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/kubestellar/kubestellar/discussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Discussions<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.youtube.com/@kubestellar" target="_blank" rel="noopener noreferrer" class="footer__link-item">YouTube<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://mentorship.lfx.linuxfoundation.org" target="_blank" rel="noopener noreferrer" class="footer__link-item">LFX Mentorship<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://kubestellar.io" target="_blank" rel="noopener noreferrer" class="footer__link-item">KubeStellar Website<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 LFX Mentorship 2026 - KubeStellar Documentation Initiative. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+kubestellar:
+  name: KubeStellar Community
+  title: CNCF Sandbox — Multi-cluster configuration management
+  url: https://github.com/kubestellar/kubestellar
+  image_url: /img/logo.svg
+

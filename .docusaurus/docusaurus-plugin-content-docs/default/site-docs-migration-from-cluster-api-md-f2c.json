@@ -1,0 +1,24 @@
+{
+  "id": "migration/from-cluster-api",
+  "title": "Migrating from Cluster API to KubeStellar",
+  "description": "Overview",
+  "source": "@site/docs/migration/from-cluster-api.md",
+  "sourceDirName": "migration",
+  "slug": "/migration/from-cluster-api",
+  "permalink": "/docs/migration/from-cluster-api",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/migration/from-cluster-api.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Migrating from Karmada to KubeStellar",
+    "permalink": "/docs/migration/from-karmada"
+  },
+  "next": {
+    "title": "Architecture Overview",
+    "permalink": "/docs/architecture/overview"
+  }
+}

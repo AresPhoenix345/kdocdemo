@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/video-series-outline",
+  "title": "Video Tutorial Series Outline",
+  "description": "This comprehensive video series guides you through KubeStellar from basics to advanced usage. Each module builds on previous knowledge and includes real-world examples.",
+  "source": "@site/docs/tutorials/video-series-outline.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/video-series-outline",
+  "permalink": "/docs/tutorials/video-series-outline",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/tutorials/video-series-outline.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Interactive Tutorial Preview",
+    "permalink": "/docs/tutorials/interactive-tutorial-preview"
+  },
+  "next": {
+    "title": "Troubleshooting Guide",
+    "permalink": "/docs/troubleshooting/"
+  }
+}

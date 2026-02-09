@@ -1,0 +1,24 @@
+{
+  "id": "troubleshooting/error-reference",
+  "title": "Error Reference",
+  "description": "This page is a quick “lookup table” for common error signatures you’ll see while working with KubeStellar, especially during setup and first syncs.",
+  "source": "@site/docs/troubleshooting/error-reference.md",
+  "sourceDirName": "troubleshooting",
+  "slug": "/troubleshooting/error-reference",
+  "permalink": "/docs/troubleshooting/error-reference",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/troubleshooting/error-reference.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Common Issues (20)",
+    "permalink": "/docs/troubleshooting/common-issues"
+  },
+  "next": {
+    "title": "Use Cases",
+    "permalink": "/docs/use-cases/"
+  }
+}

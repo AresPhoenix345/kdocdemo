@@ -1,0 +1,108 @@
+.diagramContainer {
+  margin: 2rem 0;
+}
+
+.architectureDiagram {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'wds arrow1 its arrow2 wec1 wec2 wec3'
+    'policy policy policy policy policy policy policy';
+  gap: 1.5rem;
+  padding: 2rem;
+  background: var(--ifm-color-emphasis-50);
+  border-radius: 12px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.component {
+  background: var(--ifm-card-background-color);
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.component:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.componentIcon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.component h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.component p {
+  font-size: 0.9rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0;
+}
+
+.componentLink {
+  text-decoration: none;
+}
+
+.componentLink:hover {
+  text-decoration: none;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}
+
+.bindingPolicy {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+}
+
+.bindingPolicy h3,
+.bindingPolicy p {
+  color: white;
+}
+
+.description {
+  text-align: center;
+  color: var(--ifm-color-content-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 996px) {
+  .architectureDiagram {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'wds'
+      'arrow1'
+      'its'
+      'arrow2'
+      'wec1'
+      'wec2'
+      'wec3'
+      'policy';
+  }
+  
+  .arrow {
+    transform: rotate(90deg);
+    margin: 0.5rem 0;
+  }
+}

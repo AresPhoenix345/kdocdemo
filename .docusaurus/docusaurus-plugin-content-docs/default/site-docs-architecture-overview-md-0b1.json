@@ -1,0 +1,24 @@
+{
+  "id": "architecture/overview",
+  "title": "Architecture Overview",
+  "description": "KubeStellar provides multi-cluster deployment of native Kubernetes objects (no wrapping/bundling) controlled by simple, declarative BindingPolicy objects.",
+  "source": "@site/docs/architecture/overview.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/overview",
+  "permalink": "/docs/architecture/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/architecture/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Migrating from Cluster API to KubeStellar",
+    "permalink": "/docs/migration/from-cluster-api"
+  },
+  "next": {
+    "title": "Workload Description Space (WDS)",
+    "permalink": "/docs/architecture/wds"
+  }
+}

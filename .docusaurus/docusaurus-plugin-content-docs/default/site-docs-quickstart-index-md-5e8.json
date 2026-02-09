@@ -1,0 +1,24 @@
+{
+  "id": "quickstart/index",
+  "title": "Quickstart Guide",
+  "description": "Welcome to the KubeStellar Quickstart Guide! This guide will help you get KubeStellar up and running in 30 minutes or less, from zero to your first multi-cluster deployment.",
+  "source": "@site/docs/quickstart/index.md",
+  "sourceDirName": "quickstart",
+  "slug": "/quickstart/",
+  "permalink": "/docs/quickstart/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/kubestellar/kubestellar/edit/main/kdemo/docs/quickstart/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Welcome to the KubeStellar Documentation Initiative",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Prerequisites",
+    "permalink": "/docs/quickstart/prerequisites"
+  }
+}
